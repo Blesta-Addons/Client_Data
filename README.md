@@ -35,11 +35,11 @@ http://your_domain.com/blesta_dir/plugin/client_data/main/count_services/suspend
 
 Get CLient's Open Invoices
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_services/open
+http://your_domain.com/blesta_dir/plugin/client_data/main/count_invoices/open
 
 Get CLient's Vioded Invoices
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_services/vioded
+http://your_domain.com/blesta_dir/plugin/client_data/main/count_invoices/vioded
 
 
 
