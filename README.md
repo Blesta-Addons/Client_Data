@@ -11,11 +11,11 @@ Example of Requests :
 
 Get CLient's Open Tickets
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_tickets/open
+http://your_domain.com/blesta_dir/plugin/client_data/client_main/count_tickets/open
 
 Get CLient's Closed Tickets
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_tickets/closed
+http://your_domain.com/blesta_dir/plugin/client_data/client_main/count_tickets/closed
 
 
 
@@ -23,11 +23,11 @@ http://your_domain.com/blesta_dir/plugin/client_data/main/count_tickets/closed
 
 Get CLient's Active Services
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_services/active
+http://your_domain.com/blesta_dir/plugin/client_data/client_main/count_services/active
 
 Get CLient's Suspended Services
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_services/suspended
+http://your_domain.com/blesta_dir/plugin/client_data/client_main/count_services/suspended
 
 
 
@@ -35,11 +35,11 @@ http://your_domain.com/blesta_dir/plugin/client_data/main/count_services/suspend
 
 Get CLient's Open Invoices
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_invoices/open
+http://your_domain.com/blesta_dir/plugin/client_data/client_main/count_invoices/open
 
 Get CLient's Vioded Invoices
 
-http://your_domain.com/blesta_dir/plugin/client_data/main/count_invoices/vioded
+http://your_domain.com/blesta_dir/plugin/client_data/client_main/count_invoices/vioded
 
 
 
@@ -52,7 +52,7 @@ To get the info by Ajax request in template us this code
 			});
 			
 			function fetchInvoicesCount() {
-				$(this).blestaRequest("GET", "' . $this->Html->safe($this->base_uri . "plugin/client_data/main/count_invoices/open") . '", null, function(data) {
+				$(this).blestaRequest("GET", "' . $this->Html->safe($this->base_uri . "plugin/client_data/client_main/count_invoices/open") . '", null, function(data) {
 					if (data)
 						$("#my_div_id_to_replace").html(data);
 				},
