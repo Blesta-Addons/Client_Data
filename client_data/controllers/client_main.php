@@ -35,7 +35,7 @@ class CLientMain extends ClientDataController
 			$status = "open";
 		}
 
-		if (!$this->isAjax()) {
+		if ($this->isAjax()) {
 			// Load Model Only When we Need it !!!
 			$this->uses(["SupportManager.SupportManagerTickets"]);
 			
@@ -60,7 +60,7 @@ class CLientMain extends ClientDataController
 			$status = "active";
 		}
 
-		if (!$this->isAjax()) {
+		if ($this->isAjax()) {
 			// Load Model Only When we Need it !!!	
 			$this->uses(["Services"]);
 			
@@ -85,7 +85,7 @@ class CLientMain extends ClientDataController
 			$status = "open";
 		}
 
-		if (!$this->isAjax()) {
+		if ($this->isAjax()) {
 			// Load Model Only When we Need it !!!	
 			$this->uses(["Invoices"]);
 			
